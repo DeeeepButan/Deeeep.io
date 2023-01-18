@@ -1,0 +1,62 @@
+body{
+    margin: 0px;
+}
+a {
+  color:black;
+  text-decoration: none;
+}
+/* a태그는 전부 ~ style: css*/
+/* id>클래스>태그 id는 단 하나만 가능(값) # <<< id 선택 */
+h1{
+    font-size: 45px;
+    text-align: center;
+    border-bottom:1px solid gray;
+    margin:0;
+    padding:20px;
+    font-family:Cursive;
+
+  }
+#dio{
+  color: hwb(218 32% 0%);
+}
+p {
+  font-size: 20px;
+}  
+#주소{
+  color: #00b0b0;
+  font-size: 20px;
+}
+h3{
+    font-size: 20px;
+    font-weight: 500;
+}
+ol{
+    border-right:1px solid gray;
+    width: 180px;
+    margin:0px;
+    padding: 20px;
+}     
+/* . <<< 태그에서 클래스 값으로 변경 */
+#grid{
+display: grid;
+grid-template-columns: 150px 1fr;
+}
+#grid ol{
+padding-left: 33px;
+font-size: 20px;
+}
+/* 부모가 그리드 태그인 ol만 */
+#grid #artcle{
+padding-left: 105px;
+}
+@media(max-width:800px){
+#grid{
+display: block;
+}  
+ol{
+border-right:none;
+}
+h1 {
+border-bottom:none;
+}
+}    
